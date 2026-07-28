@@ -50,8 +50,7 @@ export function Navbar({ active }: { active?: "home" | "about" | "products" | "q
         <div className="flex items-center gap-3">
           <button className="hidden md:inline-flex btn-gold">Request Export Quote</button>
           <a
-            href="https://wa.me/918237887289
-"
+            href="https://wa.me/918237887289"
             aria-label="WhatsApp"
             className="flex h-10 w-10 items-center justify-center rounded-full bg-[#25D366] text-white transition-transform hover:scale-110"
           >
