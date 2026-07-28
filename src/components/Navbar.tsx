@@ -3,13 +3,13 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const links = [
-  { to: "/", label: "Home" },
+  { to: "/about", label: "Home" },
   { to: "/about", label: "About Us" },
   { to: "/products", label: "Products" },
   { to: "/products", label: "Quality" },
   { to: "/products", label: "Packaging" },
   { to: "/products", label: "Exports" },
-  { to: "/products", label: "Contact Us" },
+  { to: "/contact", label: "Contact Us" },
 ];
 
 export function Navbar({ active }: { active?: "home" | "about" | "products" | "quality" | "packaging" | "exports" | "contact" }) {
@@ -17,15 +17,8 @@ export function Navbar({ active }: { active?: "home" | "about" | "products" | "q
   return (
     <header className="sticky top-0 z-50 bg-navy-deep text-cream">
       <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-4 py-4 md:px-8 lg:px-12">
-        <Link to="/" className="flex items-center gap-3 shrink-0">
-          <div className="flex h-11 w-11 items-center justify-center rounded-sm border border-gold text-gold font-serif text-2xl font-bold">
-            7
-          </div>
-          <div className="leading-tight">
-            <div className="font-serif text-lg font-bold tracking-wider text-cream">7 SEAS</div>
-            <div className="text-[10px] font-semibold tracking-[0.25em] text-gold">ENTERPRISE</div>
-            <div className="text-[8px] tracking-[0.2em] text-cream/60">BRIDGING BORDERS. BUILDING TRADE.</div>
-          </div>
+        <Link to="/about" className="flex items-center gap-3 shrink-0">
+          <img src="/7seaslogo.png" alt="7 Seas Enterprise Logo" className="h-20 w-20" />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-7 text-xs font-semibold tracking-[0.15em]">
@@ -33,7 +26,8 @@ export function Navbar({ active }: { active?: "home" | "about" | "products" | "q
             const isActive =
               (active === "about" && l.label === "About Us") ||
               (active === "products" && l.label === "Products") ||
-              (active === "home" && l.label === "Home");
+              (active === "home" && l.label === "Home") ||
+              (active === "contact" && l.label === "Contact Us");
             return (
               <Link
                 key={i}
@@ -48,7 +42,7 @@ export function Navbar({ active }: { active?: "home" | "about" | "products" | "q
         </nav>
 
         <div className="flex items-center gap-3">
-          <button className="hidden md:inline-flex btn-gold">Request Export Quote</button>
+          <Link to="/contact" className="hidden md:inline-flex btn-gold">Request Export Quote</Link>
           <a
             href="https://wa.me/918237887289"
             aria-label="WhatsApp"
@@ -71,7 +65,7 @@ export function Navbar({ active }: { active?: "home" | "about" | "products" | "q
               {l.label.toUpperCase()}
             </Link>
           ))}
-          <button className="btn-gold w-full justify-center">Request Export Quote</button>
+          <Link to="/contact" onClick={() => setOpen(false)} className="btn-gold w-full justify-center">Request Export Quote</Link>
         </div>
       )}
     </header>

@@ -57,9 +57,9 @@ export function AboutPage() {
                 7 Seas Enterprise is an Indian export company focused on supplying premium Indian jaggery to international buyers. We work with quality-focused producers and follow a structured approach to sourcing, quality verification, packaging and export supply.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <button className="btn-gold"><Package className="h-4 w-4" /> Explore Products</button>
-                <button className="btn-outline-gold"><PackageOpen className="h-4 w-4" /> Packaging Solutions</button>
-                <button className="btn-outline-gold"><FileText className="h-4 w-4" /> Request Export Quote</button>
+                <Link to="/products" className="btn-gold"><Package className="h-4 w-4" /> Explore Products</Link>
+                <Link to="/contact" className="btn-outline-gold"><PackageOpen className="h-4 w-4" /> Packaging Solutions</Link>
+                <Link to="/contact" className="btn-outline-gold"><FileText className="h-4 w-4" /> Request Export Quote</Link>
               </div>
             </div>
 
@@ -178,8 +178,8 @@ export function AboutPage() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link to="/products" className="btn-gold"><Package className="h-4 w-4" /> Explore Products</Link>
-            <button className="btn-outline-navy"><ShieldCheck className="h-4 w-4" /> Quality & Compliance</button>
-            <button className="btn-outline-navy"><FileText className="h-4 w-4" /> Request Export Quote</button>
+            <Link to="/contact" className="btn-outline-navy"><ShieldCheck className="h-4 w-4" /> Quality & Compliance</Link>
+            <Link to="/contact" className="btn-outline-navy"><FileText className="h-4 w-4" /> Request Export Quote</Link>
           </div>
         </div>
       </section>
