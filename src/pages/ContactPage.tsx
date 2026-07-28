@@ -28,7 +28,7 @@ const initialForm: FormData = {
   message: "",
 };
 
-const appsScriptUrl = (import.meta.env.VITE_CONTACT_WEBHOOK_URL || "").trim();
+const submissionEndpoint = "/api/contact";
 
 export function ContactPage() {
   const [formData, setFormData] = useState<FormData>(initialForm);
@@ -47,20 +47,11 @@ export function ContactPage() {
     event.preventDefault();
     setStatus({ type: "idle", message: "" });
 
-    if (!appsScriptUrl) {
-      setStatus({
-        type: "error",
-        message: "Please try again later.",
-      });
-      return;
-    }
-
     setIsSubmitting(true);
 
     try {
-      const response = await fetch(appsScriptUrl, {
+      const response = await fetch(submissionEndpoint, {
         method: "POST",
-        mode: "cors",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
