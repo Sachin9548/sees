@@ -270,7 +270,7 @@ export function ProductsPage() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <button className="btn-gold"><Send className="h-4 w-4" /> Request Export Quote</button>
-                <a href="https://wa.me/919999999999" className="btn-outline-gold" style={{ borderColor: "#25D366", color: "#25D366" }}>
+                <a href="https://wa.me/918237887289" className="btn-outline-gold" style={{ borderColor: "#25D366", color: "#25D366" }}>
                   <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor"><path d="M20.52 3.48A11.86 11.86 0 0012.05 0C5.49 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.6 5.94L0 24l6.32-1.66a11.87 11.87 0 005.72 1.46h.01c6.56 0 11.9-5.34 11.9-11.9 0-3.18-1.24-6.17-3.43-8.42z"/></svg>
                   WhatsApp Us
                 </a>
