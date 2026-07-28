@@ -28,12 +28,11 @@ import { Link } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { ProductCard } from "@/components/ProductCard";
 import { Footer } from "@/components/Footer";
+import { PackagingSection } from "@/components/PackagingSection";
 import powderImg from "@/assets/jaggery-powder.jpg";
 import cubesImg from "@/assets/jaggery-cubes.jpg";
 import blocksImg from "@/assets/jaggery-blocks.jpg";
 import powderDetail from "@/assets/powder-detail.jpg";
-import retailPack from "@/assets/retail-packaging.jpg";
-import bulkPack from "@/assets/bulk-packaging.jpg";
 
 const specs = [
   { icon: PackageIcon, k: "Product", v: "Sugarcane Jaggery Powder" },
@@ -73,29 +72,6 @@ const benefits = [
     icon: Clock,
     title: "12 MONTHS SHELF LIFE",
     desc: "When stored in cool & dry place",
-  },
-];
-
-const packagingFeatures = [
-  {
-    icon: ShieldCheck,
-    title: "MOISTURE PROTECTED PACKAGING",
-    desc: "Protects product quality and freshness",
-  },
-  {
-    icon: Award,
-    title: "FOOD GRADE MATERIALS",
-    desc: "Safe, hygienic and export compliant",
-  },
-  {
-    icon: Truck,
-    title: "EXPORT TRANSIT READY",
-    desc: "Designed for safe international shipment",
-  },
-  {
-    icon: Settings,
-    title: "CUSTOM PACKAGING AVAILABLE",
-    desc: "As per buyer requirement",
   },
 ];
 
@@ -307,122 +283,7 @@ export function ProductsPage() {
       </section>
 
       {/* Packaging & Export Supply */}
-      <section className="pb-16">
-        <div className="mx-auto max-w-[1400px] px-4 md:px-8 lg:px-12 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-navy-deep">
-            PACKAGING & EXPORT SUPPLY
-          </h2>
-          <p className="mt-2 text-sm md:text-base text-muted-foreground">
-            Flexible Packaging Solutions for International Markets
-          </p>
-          <div className="mt-4 flex justify-center">
-            <span className="inline-block h-2 w-2 rotate-45 bg-gold" />
-          </div>
-        </div>
-
-        <div className="mx-auto max-w-[1400px] px-4 md:px-8 lg:px-12 mt-10 grid gap-6 lg:grid-cols-3">
-          {/* Retail */}
-          <div className="rounded-lg border border-border bg-card p-5">
-            <div className="text-center">
-              <div className="font-serif text-lg font-bold text-navy-deep tracking-wide">
-                RETAIL PACKAGING
-              </div>
-              <div className="text-[11px] text-gold mt-1">
-                Resealable • High Barrier • Export Ready
-              </div>
-            </div>
-            <img
-              src={retailPack}
-              alt="Retail packaging"
-              loading="lazy"
-              className="mt-4 w-full h-56 object-cover rounded-md"
-            />
-            <div className="mt-3 flex justify-center gap-3 text-[11px] font-semibold">
-              <span className="rounded border border-gold px-3 py-1 text-navy-deep">
-                500 g
-              </span>
-              <span className="rounded border border-gold px-3 py-1 text-navy-deep">
-                1 kg
-              </span>
-            </div>
-            <ul className="mt-4 space-y-2">
-              {[
-                "Attractive retail-ready packaging",
-                "Custom labeling available on request",
-                "Shelf stable and easy to store",
-              ].map((i) => (
-                <li
-                  key={i}
-                  className="flex items-start gap-2 text-xs text-muted-foreground"
-                >
-                  <CheckCircle2 className="h-4 w-4 text-gold mt-0.5 shrink-0" />
-                  {i}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Bulk */}
-          <div className="rounded-lg border border-border bg-card p-5">
-            <div className="text-center">
-              <div className="font-serif text-lg font-bold text-navy-deep tracking-wide">
-                BULK / FOOD SERVICE PACKAGING
-              </div>
-              <div className="text-[11px] text-gold mt-1">
-                Strong & Safe • For Commercial Use
-              </div>
-            </div>
-            <img
-              src={bulkPack}
-              alt="Bulk packaging"
-              loading="lazy"
-              className="mt-4 w-full h-56 object-cover rounded-md"
-            />
-            <div className="mt-3 flex justify-center gap-3 text-[11px] font-semibold">
-              <span className="rounded border border-gold px-3 py-1 text-navy-deep">
-                5 kg
-              </span>
-              <span className="rounded border border-gold px-3 py-1 text-navy-deep">
-                10 kg
-              </span>
-            </div>
-            <ul className="mt-4 space-y-2">
-              {[
-                "Food grade packaging materials",
-                "Moisture protected for safe transportation",
-                "Available in 5 kg & 10 kg packs",
-              ].map((i) => (
-                <li
-                  key={i}
-                  className="flex items-start gap-2 text-xs text-muted-foreground"
-                >
-                  <CheckCircle2 className="h-4 w-4 text-gold mt-0.5 shrink-0" />
-                  {i}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Features */}
-          <div className="rounded-lg border border-border bg-card p-6 space-y-5">
-            {packagingFeatures.map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="flex items-start gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold text-gold">
-                  <Icon className="h-5 w-5" strokeWidth={1.5} />
-                </div>
-                <div className="min-w-0">
-                  <div className="text-xs font-bold tracking-[0.08em] text-navy-deep uppercase">
-                    {title}
-                  </div>
-                  <div className="text-xs text-muted-foreground mt-1">
-                    {desc}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <PackagingSection />
 
       {/* Enquiry strip */}
       <section className="pb-0">

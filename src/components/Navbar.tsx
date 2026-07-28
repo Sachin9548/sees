@@ -7,7 +7,7 @@ const links = [
   { to: "/about", label: "About Us" },
   { to: "/products", label: "Products" },
   { to: "/products", label: "Quality" },
-  { to: "/products", label: "Packaging" },
+  { to: "/packaging", label: "Packaging" },
   { to: "/products", label: "Exports" },
   { to: "/contact", label: "Contact Us" },
 ];
@@ -26,6 +26,7 @@ export function Navbar({ active }: { active?: "home" | "about" | "products" | "q
             const isActive =
               (active === "about" && l.label === "About Us") ||
               (active === "products" && l.label === "Products") ||
+              (active === "packaging" && l.label === "Packaging") ||
               (active === "home" && l.label === "Home") ||
               (active === "contact" && l.label === "Contact Us");
             return (
