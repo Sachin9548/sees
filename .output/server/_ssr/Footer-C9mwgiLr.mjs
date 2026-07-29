@@ -85,7 +85,7 @@ function Navbar({ active }) {
 							children: "Request Export Quote"
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-							href: "https://wa.me/918237887289",
+							href: "https://wa.me/919371002996",
 							"aria-label": "WhatsApp",
 							className: "flex h-10 w-10 items-center justify-center rounded-full bg-[#25D366] text-white transition-transform hover:scale-110",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("svg", {

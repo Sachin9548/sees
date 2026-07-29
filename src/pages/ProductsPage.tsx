@@ -310,7 +310,7 @@ export function ProductsPage() {
                   <Send className="h-4 w-4" /> Request Export Quote
                 </Link>
                 <a
-                  href="https://wa.me/918237887289"
+                  href="https://wa.me/919371002996"
                   className="btn-outline-gold"
                   style={{ borderColor: "#25D366", color: "#25D366" }}
                 >

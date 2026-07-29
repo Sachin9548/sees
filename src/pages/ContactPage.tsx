@@ -109,14 +109,15 @@ export function ContactPage() {
                 Share your product interest, target market, quantity and packaging preference. 
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a href="mailto:contact@7seasenterprise.com" className="btn-gold">
+                <a href="mailto:hello@7seasenterprise.com" className="btn-gold">
                   <Mail className="h-4 w-4" /> Email Us
                 </a>
-                <a href="https://wa.me/918237887289" className="btn-outline-gold">
+                <a href="https://wa.me/919371002996" className="btn-outline-gold">
                   <Phone className="h-4 w-4" /> WhatsApp
                 </a>
               </div>
             </div>
+
 
             <div className="rounded-lg border border-cream/10 bg-cream/10 p-6 backdrop-blur-sm">
               <div className="flex items-start gap-3">
@@ -134,7 +135,7 @@ export function ContactPage() {
               <div className="mt-6 space-y-3 text-sm text-cream/80">
                 <div className="flex items-center gap-3">
                   <Mail className="h-4 w-4 text-gold" />
-                  <span>contact@7seasenterprise.com</span>
+                  <span>hello@7seasenterprise.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="h-4 w-4 text-gold" />
