@@ -143,7 +143,7 @@ export function ContactPage() {
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="h-4 w-4 text-gold" />
-                  <span>India</span>
+                  <span>41B Jai Gurudev Nagar Besa, Behind Bharat Gas Godown Manewada Road, Nagpur, Maharashtra, India 440027</span>
                 </div>
               </div>
             </div>
