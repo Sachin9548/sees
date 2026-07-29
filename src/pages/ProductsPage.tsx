@@ -32,7 +32,7 @@ import { PackagingSection } from "@/components/PackagingSection";
 import powderImg from "@/assets/jaggery-powder.jpg";
 import cubesImg from "@/assets/jaggery-cubes.jpg";
 import blocksImg from "@/assets/jaggery-blocks.jpg";
-import powderDetail from "@/assets/powder-detail.jpg";
+import powderDetail from "@/assets/powder-detail.png";
 
 const specs = [
   { icon: PackageIcon, k: "Product", v: "Sugarcane Jaggery Powder" },

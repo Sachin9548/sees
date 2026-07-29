@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Award, CheckCircle2, Globe, Send, Settings, ShieldCheck, Truck } from "lucide-react";
-import retailPack from "@/assets/retail-packaging.jpg";
+import retailPack from "@/assets/retail-packaging.png";
 import bulkPack from "@/assets/bulk-packaging.jpg";
 
 const packagingFeatures = [
