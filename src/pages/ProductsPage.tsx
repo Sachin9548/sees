@@ -286,7 +286,7 @@ export function ProductsPage() {
       <PackagingSection />
 
       {/* Enquiry strip */}
-      <section className="pb-0">
+      {/* <section className="pb-0">
         <div className="mx-auto max-w-[1400px] px-4 md:px-8 lg:px-12">
           <div className="rounded-lg bg-navy-deep text-cream p-6 md:p-8">
             <div className="grid gap-16 lg:grid-cols-[auto_1fr_auto] items-center">
@@ -327,7 +327,7 @@ export function ProductsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <div className="mt-16" />
       <Footer />
