@@ -139,7 +139,7 @@ export function ContactPage() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="h-4 w-4 text-gold" />
-                  <span>+91 82378 87289</span>
+                  <span>+91 93710 02996</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="h-4 w-4 text-gold" />
